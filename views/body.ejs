@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>스크립트 리더기</h1>
+
+    <div class="form-group" id="form" action="/tts" method="post">
+        <label>스크립트 음성 생성</label>
+        <textarea class="form-control" name="text" id="text" rows="10" placeholder="음성 합성할 스크립트를 입력하세요"></textarea>
+
+        <div class="row">
+            <div class="col">
+                <label>목소리 설정</label>
+                <select class="form-control" name="speaker" id="speaker">
+                    <option value="mijin" selected>여자</option>
+                    <option value="jinho">남자</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>목소리 속도</label>
+                <select class="form-control" name="speed" id="speed">
+                    <option value="0" selected>보통</option>
+                    <option value="-5">느리게</option>
+                    <option value="5">빠르게</option>
+                </select>
+            </div>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="생 성">
+    </div>
+</div>

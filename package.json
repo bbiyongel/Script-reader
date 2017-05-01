@@ -1,0 +1,36 @@
+{
+  "name": "script-reader",
+  "version": "1.0.0",
+  "description": "The Script Reader, Using Naver API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauber92/Script-reader.git"
+  },
+  "keywords": [
+    "Naver",
+    "KyungheeUniv.",
+    "MESL",
+    "script reader"
+  ],
+  "author": "Junyoung Jung(sauber92)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sauber92/Script-reader/issues"
+  },
+  "homepage": "https://github.com/sauber92/Script-reader#readme",
+  "dependencies": {
+    "express": "latest",
+    "ejs": "latest",
+    "request": "latest",
+    "utf8": "latest"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
