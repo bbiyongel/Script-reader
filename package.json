@@ -26,7 +26,8 @@
     "express": "latest",
     "ejs": "latest",
     "request": "latest",
-    "utf8": "latest"
+    "body-parser": "latest",
+    "multer": "latest"
   },
   "devDependencies": {},
   "optionalDependencies": {},

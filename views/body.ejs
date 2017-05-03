@@ -1,7 +1,7 @@
 <div class="container">
     <h1>스크립트 리더기</h1>
 
-    <div class="form-group" id="form" action="/tts" method="post">
+    <div class="form-group">
         <label>스크립트 음성 생성</label>
         <textarea class="form-control" name="text" id="text" rows="10" placeholder="음성 합성할 스크립트를 입력하세요"></textarea>
 
@@ -23,6 +23,20 @@
             </div>
         </div>
 
-        <input type="submit" class="btn btn-primary" value="생 성">
+        <input id="submitBtn" type="submit" class="btn btn-primary" value="생 성">
     </div>
 </div>
+
+<script>
+  $("#submitBtn").click(function() {
+    console.log($("#speaker").val());
+    console.log($("#speed").val());
+    console.log($("#text").val());
+
+    $.post("/tts", {
+      'speaker': $("#speaker").val(),
+      'speed': $("#speed").val(),
+      'text': $("#text").val()
+    });
+  });
+</script>
