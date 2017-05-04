@@ -44,7 +44,8 @@ vi config/password.js
 <br/>
 <br/>
   4. password.js에 네이버 Client ID와 Client Secret ID를 다음과 같이 넣어준다.  
-* Client ID, Client Secret ID는 [여기](https://developers.naver.com/docs/common/register/)를 참고하면 된다.  
+  
+Client ID, Client Secret ID는 [여기](https://developers.naver.com/docs/common/register/)를 참고하면 된다.  
 
 ```js
 // password.js
@@ -78,7 +79,7 @@ URL : http://localhost:7000
 http://163.180.142.73:7000  
 
 <br/>
-*네이버 음성합성 API의 하루 사용량이 1000자로 지정되어 있습니다. 1000자가 넘어가면 동작하지 않으니 참고해주세요.*  
+네이버 음성합성 API의 하루 사용량이 1000자로 지정되어 있습니다. 1000자가 넘어가면 동작하지 않으니 참고해주세요.  
 
 ***
 
