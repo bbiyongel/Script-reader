@@ -26,7 +26,7 @@ module.exports = function(app, fs) {
         'speed': speed,
         'text': text
       },
-      header: {
+      headers: {
         'X-Naver-Client-Id': pwconfig.client_id,
         'X-Naver-Client-Secret': pwconfig.client_secret
       }
