@@ -15,6 +15,9 @@ module.exports = function(app, fs) {
   });
 
   app.post('/tts', upload.array(), function (req, res) {
+    var d = new Date();
+    var date = d.getFullYear() + '.' + (d.getMonth() +1) + '.' + d.getDate();
+    var time = d.getHours() + '.' + d.getMinutes() + '.' + d.getSeconds();
     var api_url = 'https://openapi.naver.com/v1/voice/tts.bin';
     var speaker = req.body.speaker;
     var speed = req.body.speed;
@@ -31,7 +34,7 @@ module.exports = function(app, fs) {
         'X-Naver-Client-Secret': pwconfig.client_secret
       }
     };
-    var writeStream = fs.createWriteStream('./tts1.mp3');
+    var writeStream = fs.createWriteStream('./public/' + date + '-' + time + '.mp3');
     var _req = request.post(options).on('response', function(response) {
       console.log(response.statusCode);
       console.log(response.headers['content-type']);
